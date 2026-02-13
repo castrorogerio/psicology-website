@@ -4,24 +4,24 @@ import { Brain, Heart, Flame, Users, Baby, Frown, SmilePlus, Shield, MessageCirc
 
 const featuredServices = [
   {
-    icon: Flame,
-    title: "Burnout",
-    description: "Esgotamento profissional e emocional. Recupere a energia e reencontre o equilíbrio na sua vida pessoal e profissional.",
+    icon: Brain,
+    title: "Perturbação do Espetro do Autismo (PEA)",
+    description: "Avaliação e intervenção especializada em dificuldades na comunicação social e padrões de comportamento repetitivos em crianças e jovens.",
   },
   {
-    icon: Brain,
+    icon: Flame,
     title: "PHDA",
-    description: "Perturbação de Hiperatividade e Défice de Atenção. Estratégias práticas para melhorar o foco e a organização.",
+    description: "Perturbação de Hiperatividade com Défice de Atenção. Estratégias práticas para melhorar o foco, a organização e o controlo de impulsos.",
   },
 ];
 
 const specialties = [
-  { icon: Heart, label: "Ansiedade" },
-  { icon: Frown, label: "Depressão" },
-  { icon: Users, label: "Terapia de Casal" },
-  { icon: Baby, label: "Parentalidade" },
-  { icon: Shield, label: "Autoestima" },
-  { icon: SmilePlus, label: "Gestão de Stress" },
+  { icon: Heart, label: "Dislexia" },
+  { icon: Frown, label: "Disgrafia" },
+  { icon: Baby, label: "Atraso Global" },
+  { icon: Users, label: "Pert. Comunicação" },
+  { icon: Shield, label: "Pert. Motoras" },
+  { icon: SmilePlus, label: "Pert. Comportamento" },
 ];
 
 const ServicesSection = () => {
@@ -35,14 +35,14 @@ const ServicesSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="mb-2 text-sm font-medium uppercase tracking-widest text-primary">
+          <p className="mb-2 text-base font-medium uppercase tracking-widest text-primary">
             Como posso ajudar
           </p>
-          <h2 className="mb-4 font-display text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-4 font-display text-4xl font-bold text-foreground md:text-5xl">
             Serviços
           </h2>
-          <p className="mx-auto mb-12 max-w-2xl text-muted-foreground">
-            Cada pessoa é única. Trabalho com diferentes problemáticas para o ajudar a encontrar o caminho certo para si.
+          <p className="mx-auto mb-12 max-w-2xl text-lg text-muted-foreground">
+            Avaliação e intervenção nas principais perturbações do neurodesenvolvimento em crianças e jovens.
           </p>
         </motion.div>
 
@@ -63,7 +63,7 @@ const ServicesSection = () => {
                   </div>
                   <div>
                     <h3 className="mb-2 font-display text-xl font-semibold text-foreground">{service.title}</h3>
-                    <p className="text-sm leading-relaxed text-muted-foreground">{service.description}</p>
+                    <p className="text-base leading-relaxed text-muted-foreground">{service.description}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -84,7 +84,7 @@ const ServicesSection = () => {
               <Card className="cursor-pointer border-none bg-background shadow-sm transition-all hover:shadow-md hover:-translate-y-1">
                 <CardContent className="flex flex-col items-center gap-3 p-5">
                   <spec.icon className="h-7 w-7 text-primary" />
-                  <span className="text-sm font-medium text-foreground">{spec.label}</span>
+                  <span className="text-base font-medium text-foreground">{spec.label}</span>
                 </CardContent>
               </Card>
             </motion.div>
@@ -96,7 +96,7 @@ const ServicesSection = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-10 text-center text-sm text-muted-foreground"
+          className="mt-10 text-center text-base text-muted-foreground"
         >
           Não encontra o que procura?{" "}
           <a

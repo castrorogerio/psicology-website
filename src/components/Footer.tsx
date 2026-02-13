@@ -10,7 +10,7 @@ const Footer = () => {
           <h3 className="font-display text-2xl font-bold text-primary-foreground">
             Precisas de ajuda?
           </h3>
-          <p className="text-sage-200">
+          <p className="text-lg text-sage-200">
             Estamos aqui para si. Marque a sua consulta hoje.
           </p>
           <Button size="lg" variant="secondary" className="gap-2 font-semibold" asChild>
@@ -23,12 +23,12 @@ const Footer = () => {
       </div>
 
       {/* Bottom footer */}
-      <div className="container mx-auto flex flex-col items-center gap-2 px-4 py-6 text-center text-sm">
+      <div className="container mx-auto flex flex-col items-center gap-2 px-4 py-6 text-center text-base">
         <p className="flex items-center gap-1">
-          Feito com <Heart className="h-3 w-3 text-sage-400" /> Psicologia Clínica
+          Feito com <Heart className="h-4 w-4 text-sage-400" /> Anabela Castro
         </p>
         <p className="text-sage-400">
-          © {new Date().getFullYear()} Psicologia Clínica. Todos os direitos reservados.
+          © {new Date().getFullYear()} Anabela Castro — Neuropsicologia. Todos os direitos reservados.
         </p>
       </div>
     </footer>

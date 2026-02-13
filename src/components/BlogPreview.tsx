@@ -4,21 +4,21 @@ import { ArrowRight } from "lucide-react";
 
 const posts = [
   {
-    title: "Como reconhecer os sinais de burnout",
-    author: "Dra. Ana Silva",
-    excerpt: "O burnout é um estado de esgotamento emocional, físico e mental causado pelo stress prolongado. Saiba como identificar os primeiros sinais.",
+    title: "Sinais precoces da Perturbação do Espetro do Autismo",
+    author: "Dra. Anabela Castro",
+    excerpt: "Identificar os primeiros sinais de PEA é fundamental para uma intervenção atempada. Conheça os marcos do desenvolvimento a observar nos primeiros anos de vida.",
     date: "10 Fev 2026",
   },
   {
-    title: "A importância da saúde mental no trabalho",
-    author: "Dr. João Santos",
-    excerpt: "Descubra estratégias práticas para manter o equilíbrio emocional e aumentar a produtividade no ambiente profissional.",
+    title: "PHDA na escola: estratégias para pais e professores",
+    author: "Dra. Anabela Castro",
+    excerpt: "A PHDA pode impactar o desempenho escolar e as relações sociais. Descubra estratégias práticas para apoiar crianças com défice de atenção e hiperatividade.",
     date: "5 Fev 2026",
   },
   {
-    title: "Ansiedade: quando procurar ajuda profissional",
-    author: "Dra. Maria Costa",
-    excerpt: "A ansiedade é uma emoção normal, mas quando se torna excessiva pode afetar a qualidade de vida. Saiba quando é hora de pedir ajuda.",
+    title: "Dislexia: como identificar e intervir precocemente",
+    author: "Dra. Inês Ferreira",
+    excerpt: "A dislexia afeta a capacidade de leitura e escrita, mas com uma intervenção adequada é possível desenvolver estratégias eficazes de aprendizagem.",
     date: "28 Jan 2026",
   },
 ];
@@ -34,10 +34,10 @@ const BlogPreview = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="mb-2 text-sm font-medium uppercase tracking-widest text-primary">
+          <p className="mb-2 text-base font-medium uppercase tracking-widest text-primary">
             Últimos artigos
           </p>
-          <h2 className="mb-12 font-display text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-12 font-display text-4xl font-bold text-foreground md:text-5xl">
             Blog
           </h2>
         </motion.div>
@@ -53,14 +53,14 @@ const BlogPreview = () => {
             >
               <Card className="group h-full cursor-pointer border-none shadow-md transition-shadow hover:shadow-lg">
                 <CardContent className="flex h-full flex-col p-6">
-                  <p className="mb-2 text-xs font-medium text-primary">{post.date}</p>
-                  <h3 className="mb-2 font-display text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                  <p className="mb-2 text-sm font-medium text-primary">{post.date}</p>
+                  <h3 className="mb-2 font-display text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
                     {post.title}
                   </h3>
-                  <p className="mb-4 flex-1 text-sm leading-relaxed text-muted-foreground">{post.excerpt}</p>
+                  <p className="mb-4 flex-1 text-base leading-relaxed text-muted-foreground">{post.excerpt}</p>
                   <div className="flex items-center justify-between">
-                    <p className="text-xs text-muted-foreground">{post.author}</p>
-                    <span className="flex items-center gap-1 text-xs font-medium text-primary group-hover:underline">
+                    <p className="text-sm text-muted-foreground">{post.author}</p>
+                    <span className="flex items-center gap-1 text-sm font-medium text-primary group-hover:underline">
                       Ler artigo <ArrowRight className="h-3 w-3" />
                     </span>
                   </div>

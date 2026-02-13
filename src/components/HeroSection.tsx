@@ -4,29 +4,24 @@ import { Phone, ArrowDown, Instagram } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden bg-gradient-to-br from-sage-700 via-sage-600 to-sage-500">
-      {/* Decorative shapes */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute right-0 top-0 h-[600px] w-[600px] rounded-full bg-sage-300 blur-3xl" />
-        <div className="absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-sage-200 blur-3xl" />
-      </div>
+    <section className="relative flex min-h-[100vh] items-center overflow-hidden bg-[#fcdee2]">
 
-      <div className="container relative mx-auto grid items-center gap-12 px-4 py-32 md:grid-cols-2">
+      <div className="relative mx-auto grid w-full max-w-[1600px] items-center gap-12 px-6 py-20 md:grid-cols-2 lg:px-10">
         {/* Text */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-primary-foreground"
+          className="text-foreground md:pl-12 lg:pl-24"
         >
-          <p className="mb-3 text-sm font-medium uppercase tracking-widest text-sage-200">
-            Psicologia Clínica
+          <p className="mb-3 text-base font-medium uppercase tracking-widest text-sage-600">
+            Neuropsicologia Infantil e Juvenil
           </p>
           <h1 className="mb-6 font-display text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-            Cuide da sua saúde mental com acompanhamento profissional
+            Apoio Especializado em Perturbações do Neurodesenvolvimento
           </h1>
-          <p className="mb-8 max-w-lg text-lg text-sage-200">
-            Oferecemos um espaço seguro e acolhedor para o ajudar a encontrar o equilíbrio emocional e o bem-estar que merece.
+          <p className="mb-8 max-w-lg text-xl text-sage-700">
+            Avaliação e intervenção em Autismo, PHDA, Dislexia, Perturbações da Comunicação e outras dificuldades do desenvolvimento em crianças e jovens.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button size="lg" variant="secondary" className="gap-2 font-semibold" asChild>
@@ -38,7 +33,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               variant="outline"
-              className="gap-2 border-sage-300 bg-transparent text-primary-foreground hover:bg-sage-600"
+              className="gap-2 border-sage-500 bg-transparent text-foreground hover:bg-sage-200"
               asChild
             >
               <a href="#servicos">
@@ -54,25 +49,35 @@ const HeroSection = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sage-200 transition-colors hover:text-primary-foreground"
+              className="text-sage-600 transition-colors hover:text-sage-800"
               aria-label="Instagram"
             >
-              <Instagram className="h-5 w-5" />
+              <Instagram className="h-6 w-6" />
             </a>
           </div>
         </motion.div>
 
-        {/* Photo placeholder */}
+        {/* Photo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="hidden md:flex items-center justify-center"
+          className="hidden md:flex items-center justify-center relative"
         >
-          <div className="relative h-[500px] w-[400px] overflow-hidden rounded-2xl bg-sage-400/30 shadow-2xl">
-            <div className="flex h-full w-full items-center justify-center text-sage-200">
-              <p className="text-center text-sm">A sua foto profissional aqui</p>
-            </div>
+          <div
+            className="relative max-h-[700px]"
+            style={{
+              WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 5%, black 90%, transparent 100%), linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)",
+              WebkitMaskComposite: "destination-in",
+              maskImage: "linear-gradient(to bottom, transparent 0%, black 5%, black 90%, transparent 100%), linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)",
+              maskComposite: "intersect",
+            }}
+          >
+            <img
+              src="/hero-photo.png"
+              alt="Psicóloga profissional"
+              className="h-auto max-h-[700px] w-auto object-contain"
+            />
           </div>
         </motion.div>
       </div>

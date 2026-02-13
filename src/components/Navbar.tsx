@@ -27,25 +27,25 @@ const Navbar = () => {
         scrolled ? "bg-background/95 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between px-4 py-4">
-        <a href="#" className="font-display text-xl font-semibold text-primary">
-          Psicologia Clínica
+      <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between px-6 py-5 lg:px-10">
+        <a href="#" className="font-display text-2xl font-semibold text-primary">
+          Anabela Castro - Perturbações do Neurodesenvolvimento
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden items-center gap-6 md:flex">
+        <div className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-foreground/70 transition-colors hover:text-primary"
+              className="text-base font-medium text-foreground/70 transition-colors hover:text-primary"
             >
               {link.label}
             </a>
           ))}
-          <Button size="sm" className="gap-2" asChild>
+          <Button size="default" className="gap-2 text-base" asChild>
             <a href="https://wa.me/351900000000" target="_blank" rel="noopener noreferrer">
-              <Phone className="h-3.5 w-3.5" />
+              <Phone className="h-4 w-4" />
               Marcar Consulta
             </a>
           </Button>
@@ -53,27 +53,27 @@ const Navbar = () => {
 
         {/* Mobile toggle */}
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
-          {isOpen ? <X className="h-6 w-6 text-foreground" /> : <Menu className="h-6 w-6 text-foreground" />}
+          {isOpen ? <X className="h-7 w-7 text-foreground" /> : <Menu className="h-7 w-7 text-foreground" />}
         </button>
       </div>
 
       {/* Mobile menu */}
       {isOpen && (
         <div className="border-t border-border bg-background/95 backdrop-blur-md md:hidden">
-          <div className="container mx-auto flex flex-col gap-3 px-4 py-4">
+          <div className="mx-auto flex w-full max-w-[1600px] flex-col gap-4 px-6 py-5 lg:px-10">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-foreground/70 transition-colors hover:text-primary"
+                className="text-base font-medium text-foreground/70 transition-colors hover:text-primary"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
               </a>
             ))}
-            <Button size="sm" className="mt-2 gap-2" asChild>
+            <Button size="default" className="mt-2 gap-2 text-base" asChild>
               <a href="https://wa.me/351900000000" target="_blank" rel="noopener noreferrer">
-                <Phone className="h-3.5 w-3.5" />
+                <Phone className="h-4 w-4" />
                 Marcar Consulta
               </a>
             </Button>

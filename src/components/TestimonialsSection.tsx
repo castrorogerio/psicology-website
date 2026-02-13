@@ -41,10 +41,10 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="mb-2 text-sm font-medium uppercase tracking-widest text-primary">
+          <p className="mb-2 text-base font-medium uppercase tracking-widest text-primary">
             O que dizem os nossos clientes
           </p>
-          <h2 className="mb-12 font-display text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-12 font-display text-4xl font-bold text-foreground md:text-5xl">
             Testemunhos
           </h2>
         </motion.div>
@@ -60,10 +60,10 @@ const TestimonialsSection = () => {
               className="rounded-xl bg-background p-8 shadow-md text-center"
             >
               <Quote className="mx-auto mb-4 h-8 w-8 text-primary/30" />
-              <p className="mb-6 text-lg italic leading-relaxed text-muted-foreground">
+              <p className="mb-6 text-xl italic leading-relaxed text-muted-foreground">
                 "{testimonials[current].text}"
               </p>
-              <p className="font-display font-semibold text-foreground">
+              <p className="font-display text-lg font-semibold text-foreground">
                 {testimonials[current].name}
               </p>
             </motion.div>
@@ -75,8 +75,8 @@ const TestimonialsSection = () => {
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
-                className={`h-2 w-2 rounded-full transition-all ${
-                  i === current ? "bg-primary w-6" : "bg-border"
+                className={`h-3 w-3 rounded-full transition-all ${
+                  i === current ? "bg-primary w-8" : "bg-border"
                 }`}
                 aria-label={`Testemunho ${i + 1}`}
               />

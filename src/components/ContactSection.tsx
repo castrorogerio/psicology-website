@@ -60,10 +60,10 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="mb-2 text-sm font-medium uppercase tracking-widest text-primary">
+          <p className="mb-2 text-base font-medium uppercase tracking-widest text-primary">
             Entre em contacto
           </p>
-          <h2 className="mb-12 font-display text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-12 font-display text-4xl font-bold text-foreground md:text-5xl">
             Contacto
           </h2>
         </motion.div>
@@ -85,7 +85,7 @@ const ContactSection = () => {
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 className={errors.name ? "border-destructive" : ""}
               />
-              {errors.name && <p className="mt-1 text-xs text-destructive">{errors.name}</p>}
+              {errors.name && <p className="mt-1 text-sm text-destructive">{errors.name}</p>}
             </div>
             <div>
               <Input
@@ -95,7 +95,7 @@ const ContactSection = () => {
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 className={errors.email ? "border-destructive" : ""}
               />
-              {errors.email && <p className="mt-1 text-xs text-destructive">{errors.email}</p>}
+              {errors.email && <p className="mt-1 text-sm text-destructive">{errors.email}</p>}
             </div>
             <Input
               placeholder="Telefone"
@@ -110,7 +110,7 @@ const ContactSection = () => {
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 className={errors.message ? "border-destructive" : ""}
               />
-              {errors.message && <p className="mt-1 text-xs text-destructive">{errors.message}</p>}
+              {errors.message && <p className="mt-1 text-sm text-destructive">{errors.message}</p>}
             </div>
 
             <div className="flex items-start gap-2">
@@ -119,7 +119,7 @@ const ContactSection = () => {
                 checked={consent}
                 onCheckedChange={(c) => setConsent(c === true)}
               />
-              <label htmlFor="consent" className="text-xs leading-relaxed text-muted-foreground">
+              <label htmlFor="consent" className="text-sm leading-relaxed text-muted-foreground">
                 Consinto o tratamento dos meus dados pessoais de acordo com a política de privacidade.
               </label>
             </div>
@@ -144,7 +144,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground">Morada</h4>
-                <p className="text-sm text-muted-foreground">Rua Exemplo, 123, 1000-001 Lisboa</p>
+                <p className="text-base text-muted-foreground">Rua Exemplo, 123, 1000-001 Lisboa</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -153,7 +153,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground">Email</h4>
-                <p className="text-sm text-muted-foreground">geral@psicologiaclinica.pt</p>
+                <p className="text-base text-muted-foreground">anabelacastro.psicologia@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -162,7 +162,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground">Telefone</h4>
-                <p className="text-sm text-muted-foreground">+351 900 000 000</p>
+                <p className="text-base text-muted-foreground">+351 900 000 000</p>
               </div>
             </div>
           </motion.div>

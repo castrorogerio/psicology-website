@@ -3,19 +3,19 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const teamMembers = [
   {
-    name: "Dra. Ana Silva",
+    name: "Dra. Anabela Castro",
     opp: "OPP 12345",
-    bio: "Psicóloga clínica especializada em ansiedade e depressão, com abordagem cognitivo-comportamental.",
+    bio: "Neuropsicóloga especializada em perturbações do neurodesenvolvimento, com foco em avaliação e intervenção em crianças e jovens.",
   },
   {
-    name: "Dr. João Santos",
+    name: "Dra. Sofia Mendes",
     opp: "OPP 67890",
-    bio: "Psicólogo clínico com foco em terapia de casal e relações interpessoais.",
+    bio: "Terapeuta da fala com experiência em perturbações da comunicação e linguagem infantil.",
   },
   {
-    name: "Dra. Maria Costa",
+    name: "Dra. Inês Ferreira",
     opp: "OPP 11223",
-    bio: "Especialista em psicologia infantil e do adolescente, com formação em terapia lúdica.",
+    bio: "Psicóloga educacional especializada em perturbações específicas da aprendizagem e apoio psicopedagógico.",
   },
 ];
 
@@ -30,10 +30,10 @@ const TeamSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="mb-2 text-sm font-medium uppercase tracking-widest text-primary">
+          <p className="mb-2 text-base font-medium uppercase tracking-widest text-primary">
             A nossa equipa
           </p>
-          <h2 className="mb-12 font-display text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-12 font-display text-4xl font-bold text-foreground md:text-5xl">
             Equipa
           </h2>
         </motion.div>
@@ -54,9 +54,9 @@ const TeamSection = () => {
                       {member.name.split(" ").slice(-1)[0][0]}
                     </span>
                   </div>
-                  <h3 className="font-display text-lg font-semibold text-foreground">{member.name}</h3>
-                  <p className="mb-3 text-xs font-medium text-primary">{member.opp}</p>
-                  <p className="text-sm leading-relaxed text-muted-foreground">{member.bio}</p>
+                  <h3 className="font-display text-xl font-semibold text-foreground">{member.name}</h3>
+                  <p className="mb-3 text-sm font-medium text-primary">{member.opp}</p>
+                  <p className="text-base leading-relaxed text-muted-foreground">{member.bio}</p>
                 </CardContent>
               </Card>
             </motion.div>

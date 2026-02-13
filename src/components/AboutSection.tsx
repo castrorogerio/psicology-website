@@ -13,10 +13,10 @@ const AboutSection = () => {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl"
         >
-          <p className="mb-2 text-center text-sm font-medium uppercase tracking-widest text-primary">
+          <p className="mb-2 text-center text-base font-medium uppercase tracking-widest text-primary">
             Conheça-nos
           </p>
-          <h2 className="mb-10 text-center font-display text-3xl font-bold text-foreground md:text-4xl">
+          <h2 className="mb-10 text-center font-display text-4xl font-bold text-foreground md:text-5xl">
             Sobre Mim
           </h2>
 
@@ -33,24 +33,24 @@ const AboutSection = () => {
             </TabsList>
 
             <TabsContent value="sobre" className="rounded-lg bg-card p-6 shadow-sm">
-              <p className="mb-4 text-muted-foreground leading-relaxed">
-                Sou psicóloga clínica com anos de experiência no acompanhamento de adultos, adolescentes e casais. Acredito que cada pessoa é única e merece um espaço seguro para explorar os seus pensamentos, emoções e desafios.
+              <p className="mb-4 text-lg text-muted-foreground leading-relaxed">
+                Sou a Anabela Castro, neuropsicóloga especializada na avaliação e intervenção em perturbações do neurodesenvolvimento em crianças e jovens. Acredito que cada criança tem um potencial único e merece um acompanhamento adaptado às suas necessidades.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
-                A minha abordagem é integrativa, combinando técnicas cognitivo-comportamentais com práticas humanistas, para proporcionar um acompanhamento personalizado e eficaz. O meu objetivo é ajudá-lo a encontrar ferramentas para lidar com as dificuldades do dia a dia e promover o seu bem-estar emocional.
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Trabalho com famílias na identificação precoce e intervenção em Perturbação do Espetro do Autismo, PHDA, Dislexia, Perturbações da Comunicação e Atraso Global do Desenvolvimento. O meu objetivo é potenciar as competências de cada criança e apoiar os pais neste percurso.
               </p>
             </TabsContent>
 
             <TabsContent value="formacao" className="rounded-lg bg-card p-6 shadow-sm">
               <ul className="space-y-4">
                 {[
-                  "Mestrado em Psicologia Clínica e da Saúde",
-                  "Pós-graduação em Terapia Cognitivo-Comportamental",
-                  "Especialização em Psicologia da Criança e do Adolescente",
+                  "Mestrado em Neuropsicologia",
+                  "Especialização em Perturbações do Neurodesenvolvimento",
+                  "Formação em Avaliação e Intervenção na Perturbação do Espetro do Autismo",
                   "Membro efetivo da Ordem dos Psicólogos Portugueses (OPP)",
-                  "Formação contínua em Mindfulness e Gestão de Stress",
+                  "Formação contínua em PHDA e Perturbações Específicas da Aprendizagem",
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                  <li key={i} className="flex items-start gap-3 text-lg text-muted-foreground">
                     <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary" />
                     {item}
                   </li>

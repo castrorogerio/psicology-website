@@ -60,7 +60,7 @@ const StatsBar = () => {
             className="text-center"
           >
             <Counter target={stat.value} suffix={stat.suffix} />
-            <p className="mt-2 text-sm font-medium text-sage-200">{stat.label}</p>
+            <p className="mt-2 text-base font-medium text-sage-200">{stat.label}</p>
           </motion.div>
         ))}
       </div>
