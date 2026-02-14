@@ -138,14 +138,23 @@ const ContactSection = () => {
             transition={{ duration: 0.5 }}
             className="space-y-6"
           >
+            <a href="https://www.dourovida.pt" target="_blank" rel="noopener noreferrer">
+              <img
+                src="public/douro_vida_logo_nobackground.png"
+                alt="DouroVida"
+                className="mb-2 h-auto w-48"
+              />
+            </a>
             <div className="flex items-start gap-4">
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
                 <MapPin className="h-5 w-5 text-primary" />
               </div>
-              <div>
-                <h4 className="font-semibold text-foreground">Morada</h4>
-                <p className="text-base text-muted-foreground">Rua Exemplo, 123, 1000-001 Lisboa</p>
-              </div>
+              <a href="https://maps.app.goo.gl/1g7GUa2s3HL8E9Q1A" target="_blank" rel="noopener noreferrer">
+                <div>
+                  <h4 className="font-semibold text-foreground">Morada</h4>
+                  <p className="text-base text-muted-foreground">Rua de Alves Redol 349, 4050-043 Porto</p>
+                </div>
+              </a>
             </div>
             <div className="flex items-start gap-4">
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
@@ -153,7 +162,9 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground">Email</h4>
-                <p className="text-base text-muted-foreground">anabelacastro.psicologia@gmail.com</p>
+                <a href="mailto:anabelacastro.psicologia@gmail.com" className="hover:underline">
+                  <p className="text-base text-muted-foreground" >anabelacastro.psicologia@gmail.com</p>
+                </a>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -162,7 +173,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground">Telefone</h4>
-                <p className="text-base text-muted-foreground">+351 900 000 000</p>
+                <p className="text-base text-muted-foreground">+351 928 376 272</p>
               </div>
             </div>
           </motion.div>

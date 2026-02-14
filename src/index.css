@@ -4,96 +4,184 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * WCAG 2.2 AA verified palette — hue 174 (soft teal)
+ *
+ * Contrast ratios (light mode):
+ *   foreground on bg .............. 17.7:1  (AA: 4.5)
+ *   primary on bg ................. 6.1:1   (AA: 4.5)
+ *   white on primary .............. 6.2:1   (AA: 4.5)
+ *   muted-fg on bg ................ 5.7:1   (AA: 4.5)
+ *   muted-fg on secondary ......... 5.1:1   (AA: 4.5)
+ *   sage-600 on hero bg ........... 7.0:1   (AA: 4.5)
+ *   sage-400 on bg (large text) ... 3.1:1   (AA: 3.0)
+ *   border on bg .................. 3.4:1   (AA: 3.0)
+ *   input border on bg ............ 3.5:1   (AA: 3.0)
+ *   sage-200 on sage-800 (footer) . 9.7:1   (AA: 4.5)
+ */
 @layer base {
   :root {
-    --background: 352 83% 99%;
-    --foreground: 352 15% 15%;
+    --background: 174 18% 99%;
+    --foreground: 174 20% 8%;
 
-    --card: 352 70% 97%;
-    --card-foreground: 352 15% 15%;
+    --card: 174 14% 97%;
+    --card-foreground: 174 20% 8%;
 
-    --popover: 352 83% 99%;
-    --popover-foreground: 352 15% 15%;
+    --popover: 174 18% 99%;
+    --popover-foreground: 174 20% 8%;
 
-    --primary: 352 50% 45%;
-    --primary-foreground: 352 83% 98%;
+    --primary: 174 50% 28%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 352 65% 92%;
-    --secondary-foreground: 352 15% 15%;
+    --secondary: 174 25% 93%;
+    --secondary-foreground: 174 20% 8%;
 
-    --muted: 352 50% 93%;
-    --muted-foreground: 352 12% 45%;
+    --muted: 174 15% 93%;
+    --muted-foreground: 174 8% 38%;
 
-    --accent: 352 50% 55%;
-    --accent-foreground: 352 83% 98%;
+    --accent: 174 45% 35%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 352 50% 88%;
-    --input: 352 50% 88%;
-    --ring: 352 50% 45%;
+    --border: 174 12% 50%;
+    --input: 174 16% 48%;
+    --ring: 174 50% 28%;
 
     --radius: 0.5rem;
 
-    --sage-50: 352 83% 97%;
-    --sage-100: 352 83% 93%;
-    --sage-200: 352 70% 87%;
-    --sage-300: 352 55% 75%;
-    --sage-400: 352 45% 60%;
-    --sage-500: 352 50% 45%;
-    --sage-600: 352 55% 36%;
-    --sage-700: 352 55% 28%;
-    --sage-800: 352 50% 20%;
-    --sage-900: 352 45% 12%;
+    --sage-50: 174 20% 97%;
+    --sage-100: 174 18% 93%;
+    --sage-200: 174 12% 85%;
+    --sage-300: 174 10% 72%;
+    --sage-400: 174 16% 52%;
+    --sage-500: 174 22% 38%;
+    --sage-600: 174 30% 28%;
+    --sage-700: 174 30% 22%;
+    --sage-800: 174 22% 16%;
+    --sage-900: 174 18% 10%;
 
-    --sidebar-background: 352 83% 97%;
-    --sidebar-foreground: 352 15% 15%;
-    --sidebar-primary: 352 50% 45%;
-    --sidebar-primary-foreground: 352 83% 98%;
-    --sidebar-accent: 352 65% 92%;
-    --sidebar-accent-foreground: 352 15% 15%;
-    --sidebar-border: 352 50% 88%;
-    --sidebar-ring: 352 50% 45%;
+    --sidebar-background: 174 18% 97%;
+    --sidebar-foreground: 174 20% 8%;
+    --sidebar-primary: 174 50% 28%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 174 25% 93%;
+    --sidebar-accent-foreground: 174 20% 8%;
+    --sidebar-border: 174 12% 50%;
+    --sidebar-ring: 174 50% 28%;
+
+    /* Hero gradient & blobs */
+    --hero-from: 174 24% 97%;
+    --hero-via: 174 28% 94%;
+    --hero-to: 174 24% 91%;
+    --hero-blob-1: 174 24% 94%;
+    --hero-blob-2: 174 30% 92%;
+    --hero-blob-3: 174 20% 89%;
+
+    /* WhatsApp button */
+    --wa-button: 174 35% 24%;
   }
 
   .dark {
-    --background: 352 20% 6%;
-    --foreground: 352 15% 95%;
+    --background: 174 15% 7%;
+    --foreground: 174 8% 93%;
 
-    --card: 352 18% 10%;
-    --card-foreground: 352 15% 95%;
+    --card: 174 12% 11%;
+    --card-foreground: 174 8% 93%;
 
-    --popover: 352 18% 10%;
-    --popover-foreground: 352 15% 95%;
+    --popover: 174 12% 11%;
+    --popover-foreground: 174 8% 93%;
 
-    --primary: 352 50% 60%;
-    --primary-foreground: 352 20% 6%;
+    --primary: 174 42% 60%;
+    --primary-foreground: 174 15% 7%;
 
-    --secondary: 352 15% 15%;
-    --secondary-foreground: 352 15% 95%;
+    --secondary: 174 10% 16%;
+    --secondary-foreground: 174 8% 93%;
 
-    --muted: 352 12% 18%;
-    --muted-foreground: 352 10% 60%;
+    --muted: 174 8% 20%;
+    --muted-foreground: 174 6% 65%;
 
-    --accent: 352 40% 50%;
-    --accent-foreground: 352 15% 95%;
+    --accent: 174 35% 52%;
+    --accent-foreground: 174 15% 7%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62% 55%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 352 12% 18%;
-    --input: 352 12% 18%;
-    --ring: 352 50% 60%;
+    --border: 174 8% 40%;
+    --input: 174 10% 42%;
+    --ring: 174 42% 60%;
 
-    --sidebar-background: 352 18% 8%;
-    --sidebar-foreground: 352 15% 95%;
-    --sidebar-primary: 352 50% 60%;
-    --sidebar-primary-foreground: 352 20% 6%;
-    --sidebar-accent: 352 12% 15%;
-    --sidebar-accent-foreground: 352 15% 95%;
-    --sidebar-border: 352 12% 18%;
-    --sidebar-ring: 352 50% 60%;
+    --sage-50: 174 10% 93%;
+    --sage-100: 174 8% 85%;
+    --sage-200: 174 6% 75%;
+    --sage-300: 174 6% 60%;
+    --sage-400: 174 8% 48%;
+    --sage-500: 174 12% 38%;
+    --sage-600: 174 10% 30%;
+    --sage-700: 174 10% 22%;
+    --sage-800: 174 10% 16%;
+    --sage-900: 174 8% 10%;
+
+    --sidebar-background: 174 12% 8%;
+    --sidebar-foreground: 174 8% 93%;
+    --sidebar-primary: 174 42% 60%;
+    --sidebar-primary-foreground: 174 15% 7%;
+    --sidebar-accent: 174 8% 16%;
+    --sidebar-accent-foreground: 174 8% 93%;
+    --sidebar-border: 174 8% 40%;
+    --sidebar-ring: 174 42% 60%;
+
+    --hero-from: 174 12% 12%;
+    --hero-via: 174 14% 14%;
+    --hero-to: 174 12% 16%;
+    --hero-blob-1: 174 14% 14%;
+    --hero-blob-2: 174 16% 16%;
+    --hero-blob-3: 174 10% 12%;
+
+    --wa-button: 174 25% 42%;
+  }
+}
+
+/* Wide-gamut (OLED / Display P3) — reduce saturation ~30% to match IPS appearance */
+@media (color-gamut: p3) {
+  :root {
+    --primary: 174 38% 28%;
+    --accent: 174 34% 35%;
+
+    --secondary: 174 18% 93%;
+    --muted: 174 10% 93%;
+    --muted-foreground: 174 5% 38%;
+
+    --border: 174 8% 50%;
+    --input: 174 11% 48%;
+    --ring: 174 38% 28%;
+
+    --sage-50: 174 14% 97%;
+    --sage-100: 174 12% 93%;
+    --sage-200: 174 8% 85%;
+    --sage-300: 174 7% 72%;
+    --sage-400: 174 11% 52%;
+    --sage-500: 174 16% 38%;
+    --sage-600: 174 22% 28%;
+    --sage-700: 174 22% 22%;
+    --sage-800: 174 16% 16%;
+    --sage-900: 174 12% 10%;
+
+    --hero-from: 174 17% 97%;
+    --hero-via: 174 20% 94%;
+    --hero-to: 174 17% 91%;
+    --hero-blob-1: 174 17% 94%;
+    --hero-blob-2: 174 22% 92%;
+    --hero-blob-3: 174 14% 89%;
+
+    --wa-button: 174 26% 24%;
+  }
+
+  .dark {
+    --primary: 174 32% 60%;
+    --accent: 174 26% 52%;
+    --ring: 174 32% 60%;
   }
 }
 

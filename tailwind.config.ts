@@ -63,6 +63,17 @@ export default {
           800: "hsl(var(--sage-800))",
           900: "hsl(var(--sage-900))",
         },
+        hero: {
+          from: "hsl(var(--hero-from))",
+          via: "hsl(var(--hero-via))",
+          to: "hsl(var(--hero-to))",
+          "blob-1": "hsl(var(--hero-blob-1))",
+          "blob-2": "hsl(var(--hero-blob-2))",
+          "blob-3": "hsl(var(--hero-blob-3))",
+        },
+        wa: {
+          button: "hsl(var(--wa-button))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
