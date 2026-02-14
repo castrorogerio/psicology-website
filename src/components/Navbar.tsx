@@ -28,7 +28,7 @@ const Navbar = () => {
       }`}
     >
       <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between px-4 py-3 md:px-6 md:py-5 lg:px-10">
-        <a href="#" className="max-w-[220px] truncate font-display text-lg font-semibold text-primary md:max-w-none md:text-2xl">
+        <a href="#" className="font-display text-lg font-semibold leading-tight text-primary md:text-2xl">
           Anabela Castro - Perturbações do Neurodesenvolvimento
         </a>
 
