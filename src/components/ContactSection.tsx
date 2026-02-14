@@ -140,7 +140,7 @@ const ContactSection = () => {
           >
             <a href="https://www.dourovida.pt" target="_blank" rel="noopener noreferrer">
               <img
-                src="public/douro_vida_logo_nobackground.png"
+                src={`${import.meta.env.BASE_URL}douro_vida_logo_nobackground.png`}
                 alt="DouroVida"
                 className="mb-2 h-auto w-48"
               />

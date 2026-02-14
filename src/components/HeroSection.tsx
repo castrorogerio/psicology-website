@@ -197,7 +197,7 @@ const HeroSection = () => {
           className="hidden md:flex items-center justify-center relative"
         >
           <img
-            src="/hero-photo.png"
+            src={`${import.meta.env.BASE_URL}hero-photo.png`}
             alt="Psicóloga profissional"
             className="h-auto max-h-[700px] w-auto object-contain"
           />
