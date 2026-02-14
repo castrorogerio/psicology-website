@@ -27,8 +27,8 @@ const Navbar = () => {
         scrolled ? "bg-background/95 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between px-6 py-5 lg:px-10">
-        <a href="#" className="font-display text-2xl font-semibold text-primary">
+      <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between px-4 py-3 md:px-6 md:py-5 lg:px-10">
+        <a href="#" className="max-w-[220px] truncate font-display text-lg font-semibold text-primary md:max-w-none md:text-2xl">
           Anabela Castro - Perturbações do Neurodesenvolvimento
         </a>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button size="default" className="gap-2 text-base" asChild>
-            <a href="https://wa.me/351900000000" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/351928376272" target="_blank" rel="noopener noreferrer">
               <Phone className="h-4 w-4" />
               Marcar Consulta
             </a>
@@ -60,7 +60,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isOpen && (
         <div className="border-t border-border bg-background/95 backdrop-blur-md md:hidden">
-          <div className="mx-auto flex w-full max-w-[1600px] flex-col gap-4 px-6 py-5 lg:px-10">
+          <div className="mx-auto flex w-full max-w-[1600px] flex-col gap-4 px-4 py-4 md:px-6 md:py-5 lg:px-10">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -72,7 +72,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button size="default" className="mt-2 gap-2 text-base" asChild>
-              <a href="https://wa.me/351900000000" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/351928376272" target="_blank" rel="noopener noreferrer">
                 <Phone className="h-4 w-4" />
                 Marcar Consulta
               </a>

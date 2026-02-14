@@ -57,10 +57,10 @@ const TestimonialsSection = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.4 }}
-              className="rounded-xl bg-background p-8 shadow-md text-center"
+              className="rounded-xl bg-background p-5 shadow-md text-center md:p-8"
             >
               <Quote className="mx-auto mb-4 h-8 w-8 text-primary/30" />
-              <p className="mb-6 text-xl italic leading-relaxed text-muted-foreground">
+              <p className="mb-6 text-lg italic leading-relaxed text-muted-foreground md:text-xl">
                 "{testimonials[current].text}"
               </p>
               <p className="font-display text-lg font-semibold text-foreground">

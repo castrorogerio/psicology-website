@@ -78,7 +78,7 @@ const HowItWorksSection = () => {
 
               {/* Content card */}
               <div
-                className={`flex-1 rounded-lg bg-card p-5 shadow-sm ${
+                className={`flex-1 rounded-lg bg-card p-4 shadow-sm md:p-5 ${
                   i % 2 === 0 ? "md:text-right" : "md:text-left"
                 }`}
               >

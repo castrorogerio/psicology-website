@@ -66,32 +66,32 @@ const AboutSection = () => {
           <Tabs defaultValue="sobre" className="w-full">
             <TabsList className="mx-auto mb-6 grid w-full max-w-2xl grid-cols-3">
               <TabsTrigger value="sobre" className="gap-2">
-                <User className="h-4 w-4" />
+                <User className="hidden h-4 w-4 md:block" />
                 Sobre Mim
               </TabsTrigger>
               <TabsTrigger value="experiencia" className="gap-2">
-                <Briefcase className="h-4 w-4" />
+                <Briefcase className="hidden h-4 w-4 md:block" />
                 Experiência Profissional
               </TabsTrigger>
               <TabsTrigger value="formacao" className="gap-2">
-                <GraduationCap className="h-4 w-4" />
+                <GraduationCap className="hidden h-4 w-4 md:block" />
                 Formação
               </TabsTrigger>
             </TabsList>
 
-            <TabsContent value="sobre" className="rounded-lg bg-card p-6 shadow-sm">
-              <p className="mb-4 text-lg text-muted-foreground leading-relaxed">
+            <TabsContent value="sobre" className="rounded-lg bg-card p-4 shadow-sm md:p-6">
+              <p className="mb-4 text-base leading-relaxed text-muted-foreground md:text-lg">
                 Sou a Anabela Castro, Psicóloga Clínica com especialização avançada em Intervenção Multidisciplinar em Perturbações do Neurodesenvolvimento, com especial foco em Perturbação do Espetro do Autismo. Com mais de 10 anos de experiência clínica, dedico a minha prática à avaliação, diagnóstico e intervenção em perturbações do neurodesenvolvimento em crianças, jovens e suas famílias.
               </p>
-              <p className="mb-4 text-lg text-muted-foreground leading-relaxed">
+              <p className="mb-4 text-base leading-relaxed text-muted-foreground md:text-lg">
                 Ao longo do meu percurso profissional, desenvolvi uma vasta experiência em diversas áreas da psicologia clínica infantil e juvenil, incluindo Perturbação de Hiperatividade/Défice de Atenção (PHDA), Perturbações da Comunicação e Linguagem, Perturbações do Comportamento, Ansiedade, Regulação Emocional, entre outras.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
                 Acredito que cada criança tem um potencial único. O meu compromisso é oferecer um acompanhamento rigoroso, empático e adaptado, trabalhando em estreita colaboração com as famílias e equipas multidisciplinares para promover o desenvolvimento e o bem-estar de cada criança.
               </p>
             </TabsContent>
 
-            <TabsContent value="experiencia" className="rounded-lg bg-card p-6 shadow-sm">
+            <TabsContent value="experiencia" className="rounded-lg bg-card p-4 shadow-sm md:p-6">
               <div className="relative space-y-0">
                 {experienceEntries.map((entry, i) => (
                   <div key={i} className="relative flex gap-4 pb-6 last:pb-0">
@@ -129,7 +129,7 @@ const AboutSection = () => {
               </div>
             </TabsContent>
 
-            <TabsContent value="formacao" className="rounded-lg bg-card p-6 shadow-sm">
+            <TabsContent value="formacao" className="rounded-lg bg-card p-4 shadow-sm md:p-6">
               {/* Core qualifications */}
               <h3 className="mb-4 text-lg font-semibold text-foreground">Habilitações</h3>
               <ul className="space-y-3">

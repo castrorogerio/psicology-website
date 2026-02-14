@@ -68,7 +68,7 @@ const ContactSection = () => {
           </h2>
         </motion.div>
 
-        <div className="mx-auto grid max-w-4xl gap-10 md:grid-cols-2">
+        <div className="mx-auto flex max-w-4xl flex-col-reverse gap-10 md:grid md:grid-cols-2">
           {/* Form */}
           <motion.form
             onSubmit={handleSubmit}

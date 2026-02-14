@@ -39,7 +39,7 @@ const Counter = ({ target, suffix }: { target: number; suffix: string }) => {
   }, [target]);
 
   return (
-    <div ref={ref} className="font-display text-4xl font-bold text-primary-foreground md:text-5xl">
+    <div ref={ref} className="font-display text-3xl font-bold text-primary-foreground md:text-5xl">
       {count.toLocaleString("pt-PT")}
       {suffix}
     </div>
@@ -48,7 +48,7 @@ const Counter = ({ target, suffix }: { target: number; suffix: string }) => {
 
 const StatsBar = () => {
   return (
-    <section className="bg-primary py-16">
+    <section className="bg-primary py-10 md:py-16">
       <div className="container mx-auto grid gap-8 px-4 sm:grid-cols-3">
         {stats.map((stat, i) => (
           <motion.div

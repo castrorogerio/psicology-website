@@ -57,7 +57,7 @@ const ServicesSection = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
               <Card className="h-full border-none bg-background shadow-md transition-shadow hover:shadow-lg">
-                <CardContent className="flex gap-4 p-6">
+                <CardContent className="flex gap-4 p-4 md:p-6">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10">
                     <service.icon className="h-6 w-6 text-primary" />
                   </div>
@@ -100,7 +100,7 @@ const ServicesSection = () => {
         >
           Não encontra o que procura?{" "}
           <a
-            href="https://wa.me/351900000000"
+            href="https://wa.me/351928376272"
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium text-primary underline-offset-4 hover:underline"

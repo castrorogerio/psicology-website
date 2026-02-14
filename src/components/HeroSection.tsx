@@ -8,9 +8,9 @@ const HeroSection = () => {
 
       {/* Soft radial blobs */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-32 -top-32 h-[500px] w-[500px] rounded-full bg-hero-blob-1 opacity-60 blur-3xl" />
-        <div className="absolute right-0 top-1/3 h-[400px] w-[400px] rounded-full bg-hero-blob-2 opacity-40 blur-3xl" />
-        <div className="absolute bottom-0 left-1/3 h-[350px] w-[350px] rounded-full bg-hero-blob-3 opacity-50 blur-3xl" />
+        <div className="absolute -left-32 -top-32 h-[250px] w-[250px] rounded-full bg-hero-blob-1 opacity-60 blur-3xl md:h-[500px] md:w-[500px]" />
+        <div className="absolute right-0 top-1/3 h-[200px] w-[200px] rounded-full bg-hero-blob-2 opacity-40 blur-3xl md:h-[400px] md:w-[400px]" />
+        <div className="absolute bottom-0 left-1/3 h-[180px] w-[180px] rounded-full bg-hero-blob-3 opacity-50 blur-3xl md:h-[350px] md:w-[350px]" />
       </div>
 
       {/* Decorative neural network & brain wave patterns */}
@@ -138,7 +138,7 @@ const HeroSection = () => {
         </svg>
       </div>
 
-      <div className="relative mx-auto grid w-full max-w-[1600px] items-center gap-12 px-6 py-20 md:grid-cols-2 lg:px-10">
+      <div className="relative mx-auto grid w-full max-w-[1600px] items-center gap-8 px-4 pb-12 pt-24 md:gap-12 md:px-6 md:py-20 md:grid-cols-2 lg:px-10">
         {/* Text */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -149,15 +149,15 @@ const HeroSection = () => {
           <p className="mb-3 text-base font-medium uppercase tracking-widest text-sage-600">
             Neuropsicologia Infantil e Juvenil
           </p>
-          <h1 className="mb-6 font-display text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
+          <h1 className="mb-4 font-display text-3xl font-bold leading-tight md:mb-6 md:text-5xl lg:text-6xl">
             Apoio Especializado em Perturbações do Neurodesenvolvimento
           </h1>
-          <p className="mb-8 max-w-lg text-xl text-sage-700">
+          <p className="mb-6 max-w-lg text-lg text-sage-700 md:mb-8 md:text-xl">
             Avaliação e intervenção em Autismo, PHDA, Dislexia, Perturbações da Comunicação e outras dificuldades do desenvolvimento em crianças e jovens.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button size="lg" variant="secondary" className="gap-2 font-semibold" asChild>
-              <a href="https://wa.me/351900000000" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/351928376272" target="_blank" rel="noopener noreferrer">
                 <Phone className="h-4 w-4" />
                 Marcar Consulta Online
               </a>
