@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: 500, suffix: "+", label: "Clientes acompanhados" },
-  { value: 3000, suffix: "+", label: "Horas de consultas" },
+  { value: 400, suffix: "+", label: "Clientes acompanhados" },
+  { value: 8000, suffix: "+", label: "Horas de consultas" },
   { value: 10, suffix: "", label: "Anos de experiência" },
 ];
 

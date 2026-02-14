@@ -10,18 +10,18 @@ const featuredServices = [
   },
   {
     icon: Flame,
-    title: "PHDA",
+    title: "Perturbação de Hiperatividade/Défice de Atenção (PHDA)",
     description: "Perturbação de Hiperatividade com Défice de Atenção. Estratégias práticas para melhorar o foco, a organização e o controlo de impulsos.",
   },
 ];
 
 const specialties = [
-  { icon: Heart, label: "Dislexia" },
-  { icon: Frown, label: "Disgrafia" },
-  { icon: Baby, label: "Atraso Global" },
-  { icon: Users, label: "Pert. Comunicação" },
-  { icon: Shield, label: "Pert. Motoras" },
-  { icon: SmilePlus, label: "Pert. Comportamento" },
+  { icon: Baby, label: "Atraso Global Do Desenvolvimento" },
+  { icon: Users, label: "Perturbações Da Comunicação" },
+  { icon: Shield, label: "Perturbações Motoras" },
+  { icon: SmilePlus, label: "Perturbações Do Comportamento" },
+  { icon: SmilePlus, label: "Ansiedade/Depressão" },
+  { icon: SmilePlus, label: "TO BE DEFINED" },
 ];
 
 const ServicesSection = () => {
