@@ -13,6 +13,16 @@ const HeroSection = () => {
         <div className="absolute bottom-0 left-1/3 h-[180px] w-[180px] rounded-full bg-hero-blob-3 opacity-50 blur-3xl md:h-[350px] md:w-[350px]" />
       </div>
 
+      {/* Decorative tree — growth & learning */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <img
+          src={`${import.meta.env.BASE_URL}hero-tree.png`}
+          alt=""
+          aria-hidden="true"
+          className="absolute -left-10 bottom-0 h-[70%] w-auto object-contain opacity-[0.12] md:h-[85%] md:opacity-[0.15]"
+        />
+      </div>
+
 
       <div className="relative mx-auto grid w-full max-w-7xl items-center gap-8 px-4 pb-12 pt-24 md:gap-12 md:px-6 md:py-20 md:grid-cols-2 lg:px-8">
         {/* Text */}
