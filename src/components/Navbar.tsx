@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-2 md:px-6 md:py-3 lg:px-8">
         <a href="#" className="flex items-center gap-3">
           <img
-            src={`${import.meta.env.BASE_URL}borboleta_nobackground.png`}
+            src={`${import.meta.env.BASE_URL}borboleta_nobackground.svg`}
             alt="Logo"
             className="h-10 w-10 md:h-14 md:w-14 object-contain"
           />
