@@ -103,9 +103,9 @@ const ServicesSection = () => {
             href="https://wa.me/351928376272"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-medium text-primary underline-offset-4 hover:underline"
+            className="inline-flex items-center gap-1 font-semibold text-primary underline decoration-primary/40 decoration-2 underline-offset-4 transition-all hover:decoration-primary"
           >
-            <MessageCircle className="mr-1 inline h-4 w-4" />
+            <MessageCircle className="inline h-4 w-4" />
             Contacte-nos pelo WhatsApp
           </a>
         </motion.p>

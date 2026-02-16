@@ -13,166 +13,43 @@ const HeroSection = () => {
         <div className="absolute bottom-0 left-1/3 h-[180px] w-[180px] rounded-full bg-hero-blob-3 opacity-50 blur-3xl md:h-[350px] md:w-[350px]" />
       </div>
 
-      {/* Decorative neural network & brain wave patterns */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
 
-        {/* Large neural network — right side */}
-        <svg
-          className="absolute -bottom-16 -right-10 h-[800px] w-[700px] text-sage-400 opacity-[0.25]"
-          viewBox="0 0 700 800"
-          fill="none"
-          aria-hidden="true"
-        >
-          {/* Neural connections (dendrites) */}
-          <path d="M480 780 C475 720 490 660 470 580 C455 510 480 450 460 370 C445 300 470 240 450 160 C440 110 455 60 445 0" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-          <path d="M480 680 C420 640 370 620 310 580" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M465 540 C400 510 350 480 290 440" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M470 400 C420 370 370 350 320 310" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M455 260 C410 235 380 210 340 180" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M450 140 C420 120 395 95 370 70" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M485 620 C530 580 570 560 620 530" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M475 470 C520 440 560 420 610 390" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M460 330 C500 300 540 280 580 250" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M452 200 C490 175 520 155 555 130" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-
-          {/* Secondary branching */}
-          <path d="M310 580 C280 560 250 530 220 510" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-          <path d="M310 580 C290 610 270 635 245 660" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-          <path d="M290 440 C260 420 230 395 200 380" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-          <path d="M290 440 C275 470 255 495 235 520" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-          <path d="M320 310 C295 290 265 275 240 255" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-          <path d="M620 530 C645 515 665 495 685 475" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-          <path d="M610 390 C635 370 655 350 680 325" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-
-          {/* Synaptic nodes (neuron bodies) */}
-          <circle cx="480" cy="680" r="8" fill="currentColor" opacity="0.4" />
-          <circle cx="465" cy="540" r="7" fill="currentColor" opacity="0.38" />
-          <circle cx="470" cy="400" r="7" fill="currentColor" opacity="0.35" />
-          <circle cx="455" cy="260" r="6" fill="currentColor" opacity="0.32" />
-          <circle cx="450" cy="140" r="5" fill="currentColor" opacity="0.28" />
-
-          {/* Left terminal nodes */}
-          <circle cx="310" cy="580" r="6" fill="currentColor" opacity="0.35" />
-          <circle cx="290" cy="440" r="5.5" fill="currentColor" opacity="0.32" />
-          <circle cx="320" cy="310" r="5" fill="currentColor" opacity="0.3" />
-          <circle cx="340" cy="180" r="4.5" fill="currentColor" opacity="0.28" />
-          <circle cx="370" cy="70" r="4" fill="currentColor" opacity="0.25" />
-
-          {/* Far-left terminal nodes */}
-          <circle cx="220" cy="510" r="4" fill="currentColor" opacity="0.25" />
-          <circle cx="245" cy="660" r="4" fill="currentColor" opacity="0.25" />
-          <circle cx="200" cy="380" r="3.5" fill="currentColor" opacity="0.22" />
-          <circle cx="235" cy="520" r="3.5" fill="currentColor" opacity="0.22" />
-          <circle cx="240" cy="255" r="3.5" fill="currentColor" opacity="0.2" />
-
-          {/* Right terminal nodes */}
-          <circle cx="620" cy="530" r="6" fill="currentColor" opacity="0.35" />
-          <circle cx="610" cy="390" r="5.5" fill="currentColor" opacity="0.32" />
-          <circle cx="580" cy="250" r="5" fill="currentColor" opacity="0.3" />
-          <circle cx="555" cy="130" r="4.5" fill="currentColor" opacity="0.28" />
-          <circle cx="685" cy="475" r="3.5" fill="currentColor" opacity="0.22" />
-          <circle cx="680" cy="325" r="3.5" fill="currentColor" opacity="0.22" />
-
-          {/* Synapse glow dots (small) */}
-          <circle cx="395" cy="630" r="2.5" fill="currentColor" opacity="0.3" />
-          <circle cx="380" cy="490" r="2.5" fill="currentColor" opacity="0.28" />
-          <circle cx="395" cy="355" r="2.5" fill="currentColor" opacity="0.25" />
-          <circle cx="400" cy="220" r="2" fill="currentColor" opacity="0.22" />
-          <circle cx="550" cy="575" r="2.5" fill="currentColor" opacity="0.28" />
-          <circle cx="540" cy="430" r="2.5" fill="currentColor" opacity="0.25" />
-          <circle cx="520" cy="290" r="2" fill="currentColor" opacity="0.22" />
-        </svg>
-
-        {/* Brain wave / EEG pattern — top right */}
-        <svg
-          className="absolute -right-4 top-[8%] h-[120px] w-[420px] text-sage-300 opacity-[0.2]"
-          viewBox="0 0 420 120"
-          fill="none"
-          aria-hidden="true"
-        >
-          <path
-            d="M0 60 C20 60 25 58 35 45 C42 35 48 30 55 55 C60 70 65 75 75 60 C85 45 88 40 95 60 C105 85 110 80 120 60 C130 40 135 42 145 55 C152 65 158 60 165 45 C172 30 178 35 185 55 C192 72 198 70 208 60 C218 50 222 48 230 58 C238 68 245 65 255 50 C262 38 268 40 275 55 C285 72 290 68 300 58 C310 48 315 50 322 60 C330 72 338 68 348 55 C355 45 360 48 368 58 C375 68 382 65 392 55 C398 48 405 50 420 60"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-          <path
-            d="M0 75 C25 75 30 73 40 82 C48 88 52 90 60 78 C68 66 72 64 82 75 C92 86 96 84 105 75 C115 66 120 68 130 78 C138 86 144 84 155 75 C165 66 170 68 180 76 C188 82 195 80 208 74 C218 68 225 70 238 78 C248 84 255 82 268 74 C278 66 285 68 298 76 C308 84 315 80 328 74 C338 68 345 70 358 78 C368 84 375 82 388 76 C398 70 405 72 420 76"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            opacity="0.6"
-          />
-        </svg>
-
-        {/* Small neural cluster — bottom left */}
-        <svg
-          className="absolute -bottom-6 left-[3%] h-[300px] w-[250px] text-sage-300 opacity-[0.2]"
-          viewBox="0 0 250 300"
-          fill="none"
-          aria-hidden="true"
-        >
-          {/* Connections */}
-          <path d="M125 280 C120 240 130 200 120 160" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M120 160 C100 130 80 110 55 90" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M120 160 C145 130 170 115 195 95" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M120 160 C115 120 120 80 115 40" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M55 90 C40 75 25 55 15 35" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-          <path d="M55 90 C70 70 60 50 65 25" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-          <path d="M195 95 C210 75 225 55 240 35" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-          <path d="M195 95 C185 70 190 50 185 25" stroke="currentColor" strokeWidth="1" strokeLinecap="round" />
-          {/* Nodes */}
-          <circle cx="125" cy="280" r="6" fill="currentColor" opacity="0.4" />
-          <circle cx="120" cy="160" r="7" fill="currentColor" opacity="0.45" />
-          <circle cx="55" cy="90" r="5" fill="currentColor" opacity="0.35" />
-          <circle cx="195" cy="95" r="5" fill="currentColor" opacity="0.35" />
-          <circle cx="115" cy="40" r="4" fill="currentColor" opacity="0.3" />
-          <circle cx="15" cy="35" r="3" fill="currentColor" opacity="0.22" />
-          <circle cx="65" cy="25" r="3" fill="currentColor" opacity="0.22" />
-          <circle cx="240" cy="35" r="3" fill="currentColor" opacity="0.22" />
-          <circle cx="185" cy="25" r="3" fill="currentColor" opacity="0.22" />
-          {/* Tiny synapse dots */}
-          <circle cx="122" cy="210" r="2" fill="currentColor" opacity="0.25" />
-          <circle cx="88" cy="125" r="2" fill="currentColor" opacity="0.22" />
-          <circle cx="158" cy="128" r="2" fill="currentColor" opacity="0.22" />
-        </svg>
-      </div>
-
-      <div className="relative mx-auto grid w-full max-w-[1600px] items-center gap-8 px-4 pb-12 pt-24 md:gap-12 md:px-6 md:py-20 md:grid-cols-2 lg:px-10">
+      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-8 px-4 pb-12 pt-24 md:gap-12 md:px-6 md:py-20 md:grid-cols-2 lg:px-8">
         {/* Text */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-foreground md:pl-12 lg:pl-24"
+          className="text-foreground md:pl-6 lg:pl-12"
         >
           <p className="mb-3 text-base font-medium uppercase tracking-widest text-sage-600">
             Neuropsicologia Infantil e Juvenil
           </p>
-          <h1 className="mb-4 font-display text-3xl font-bold leading-tight md:mb-6 md:text-5xl lg:text-6xl">
+          <h1 className="mb-4 font-display text-3xl font-bold leading-tight md:mb-6 md:text-4xl lg:text-5xl">
             Apoio Especializado em Perturbações do Neurodesenvolvimento
           </h1>
-          <p className="mb-6 max-w-lg text-lg text-sage-700 md:mb-8 md:text-xl">
+          <p className="mb-6 max-w-lg text-base text-sage-700 md:mb-8 md:text-lg">
             Avaliação e intervenção em Autismo, PHDA, Dislexia, Perturbações da Comunicação e outras dificuldades do desenvolvimento em crianças e jovens.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" variant="secondary" className="gap-2 font-semibold" asChild>
-              <a href="https://wa.me/351928376272" target="_blank" rel="noopener noreferrer">
-                <Phone className="h-4 w-4" />
-                Marcar Consulta Online
-              </a>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="gap-2 border-sage-500 bg-transparent text-foreground hover:bg-sage-200"
-              asChild
+            <a
+              href="https://wa.me/351928376272"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary via-primary/90 to-primary/80 px-6 py-3 text-base font-bold text-primary-foreground shadow-xl shadow-primary/30 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/40 lg:px-8 lg:py-3.5 lg:text-lg"
             >
-              <a href="#servicos">
-                <ArrowDown className="h-4 w-4" />
-                Ver Serviços
-              </a>
-            </Button>
+              <svg viewBox="0 0 24 24" className="h-6 w-6 shrink-0 fill-current">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              Marcar Consulta
+            </a>
+            <a
+              href="#servicos"
+              className="inline-flex items-center gap-2 rounded-full border-2 border-primary/40 bg-transparent px-6 py-3 text-base font-bold text-foreground shadow-lg transition-all duration-300 hover:scale-105 hover:border-primary hover:shadow-xl lg:px-8 lg:py-3.5 lg:text-lg"
+            >
+              <ArrowDown className="h-5 w-5" />
+              Ver Serviços
+            </a>
           </div>
 
           {/* Social */}

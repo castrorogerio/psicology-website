@@ -124,10 +124,14 @@ const ContactSection = () => {
               </label>
             </div>
 
-            <Button type="submit" className="w-full gap-2" disabled={loading}>
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-primary via-primary/90 to-primary/80 px-6 py-3.5 text-base font-bold text-primary-foreground shadow-lg shadow-primary/25 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-primary/30 disabled:opacity-60 disabled:hover:scale-100"
+            >
               <Send className="h-4 w-4" />
               {loading ? "A enviar..." : "Enviar Mensagem"}
-            </Button>
+            </button>
           </motion.form>
 
           {/* Contact info */}
