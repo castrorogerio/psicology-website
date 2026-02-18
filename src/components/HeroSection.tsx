@@ -78,7 +78,7 @@ const HeroSection = () => {
           </div>
 
           {/* Social */}
-          <div className="mt-6 flex items-center justify-center gap-4 md:mt-8 md:justify-start">
+          <div className="mt-6 hidden items-center justify-center gap-4 md:mt-8 md:justify-start">
             <a
               href="https://instagram.com"
               target="_blank"

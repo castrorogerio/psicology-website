@@ -2,37 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/borboleta_nobackground.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
     <title>Anabela Castro - Psicologia</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <meta name="description" content="Anabela Castro - Psicóloga clínica especializada em saúde mental e bem-estar." />
+    <meta name="author" content="Anabela Castro" />
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="Anabela Castro - Psicologia" />
+    <meta property="og:description" content="Anabela Castro - Psicóloga clínica especializada em saúde mental e bem-estar." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
     <!-- SPA redirect handler for GitHub Pages (works with public/404.html) -->
     <script type="text/javascript">
       (function (l) {
-        if (l.search[1] === '/') {
+        if (l.search[1] === "/") {
           var decoded = l.search
             .slice(1)
-            .split('&')
+            .split("&")
             .map(function (s) {
-              return s.replace(/~and~/g, '&');
+              return s.replace(/~and~/g, "&");
             })
-            .join('?');
+            .join("?");
           window.history.replaceState(
             null,
             null,
-            l.pathname.slice(0, -1) + decoded + l.hash
+            l.pathname.slice(0, -1) + decoded + l.hash,
           );
         }
       })(window.location);
